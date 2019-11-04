@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>Hi, {{ user.username }}!</h1>
+    <h3> Some changes</h3>
     {% for post in posts %}
     <div><p>{{post.author.username}} says: <b>{{ post.body }}</b></p></div>
     {% endfor %}
